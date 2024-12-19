@@ -26,7 +26,7 @@ void loadVideos() {
 
     fread(video, sizeof(Video), 1, file);    // Читаем из файла первую запись в выделеную память
     pRoot = video;                         // Записываем указатель на эту карточку в pRoot, так как это первая запись
-   pRoot->pPrev = NULL;
+    pRoot->pPrev = NULL;
 
     while (1) // Создаём бесконечный цикл, пока его не прервёт другой цикл, который находится в нём
     {
@@ -82,7 +82,7 @@ void addVideo() {
     if (pNew == NULL) {    // проверим выделилась ли память
         printf("Ошибка!\n");
         return;
-   }
+    }
 
     printf("Введите название видео:\n>");
     scanf(" %s", pNew->title);
