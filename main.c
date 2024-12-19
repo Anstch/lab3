@@ -26,7 +26,7 @@ int main() {
         printf("Введите команду:\n");
         scanf("%d", &command);
         switch (command) {
-       case 1:
+        case 1:
             addVideo();
             saveVideos();
             break;
