@@ -157,8 +157,6 @@ void displayVideos() {
         printf("%2d ", i);
         printf("| %-16.16s",video->title);
         printf("| %-12s", video->author);
-//        printf("Title: %d\n", video->title);
-//        printf("Author: %d\n", video->author);
         printf("| %-16d\n", video->likes);
 
         video = video->pPrev;
